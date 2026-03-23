@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+header{
+
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.logo{
+    font-size: 24px;
+}
+
+nav{
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.menu-toggle{
+        display: none;
+        color: white;
+        border: none;
+        font-size: 18px;
+        background-color: darkgray;
+    
+}
+
+@media (width<768px)
+{
+    nav{
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: darkgray;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .open{
+        display: flex;
+    }
+
+}

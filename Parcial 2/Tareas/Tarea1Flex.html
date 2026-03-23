@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexEjercicio</title>
+
+    <style>
+
+    header {
+    background-color: gold;
+    text-align: center;
+    padding: 20px;
+    }
+
+    h1 {
+    font-weight: bold;
+    font-size: 24px;
+    }
+
+    main {
+    display: flex;
+    min-height: 100vh;
+    }
+
+    .izquierdo, .derecho {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+    .central {
+    flex: 2;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+
+    </style>
+</head>
+
+
+<body>
+
+  <header>
+    <h1>Titulo de la página</h1>
+  </header>
+
+  <main>
+    <div class="izquierdo">Lateral izquierdo</div>
+    <div class="central">Zona central</div>
+    <div class="derecho">Lateral derecho</div>
+  </main>
+
+
+</body>
+</html>
