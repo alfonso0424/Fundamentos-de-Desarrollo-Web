@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+
+    <style>
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .element {
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <input type="number" id="inputId">
+    <button onclick="crearElemento()">Agregar personaje</button>
+
+    <br><br>
+
+    <div class="container"></div>
+
+    <script>
+
+        const container = document.querySelector(".container");
+
+        function crearElemento() {
+
+            var id = document.getElementById("inputId").value;
+
+            var img = document.createElement("img");
+            img.src = "https://rickandmortyapi.com/api/character/avatar/" + id + ".jpeg";
+            img.classList.add("element");
+
+            container.appendChild(img);
+
+            document.getElementById("inputId").value = '';
+        }
+
+    </script>
+
+</body>
+</html>

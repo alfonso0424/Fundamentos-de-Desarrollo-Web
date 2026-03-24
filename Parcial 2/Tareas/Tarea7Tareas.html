@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador de Tareas</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input-area input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input-area button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tarjeta {
+            background-color: red;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+
+        .tarjeta p {
+            margin-bottom: 10px;
+        }
+
+        .tarjeta button {
+            margin-right: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .input-area {
+                flex-direction: column;
+            }
+
+            .tarjeta {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tareas</h1>
+
+    <div class="input-area">
+        <input type="text" id="inputTarea" >
+        <button onclick="agregarTarea()">Agregar</button>
+    </div>
+
+    <div class="lista" id="lista"></div>
+
+    <script>
+        function agregarTarea() {
+            var texto = document.getElementById('inputTarea').value;
+
+            var tarjeta = document.createElement('div');
+            tarjeta.className = 'tarjeta';
+
+            var p = document.createElement('p');
+            p.textContent = texto;
+
+            var btnCompletar = document.createElement('button');
+            btnCompletar.textContent = 'Completar';
+            btnCompletar.onclick = function() {
+                tarjeta.style.backgroundColor = 'green';
+            };
+
+            var btnEliminar = document.createElement('button');
+            btnEliminar.textContent = 'Eliminar';
+            btnEliminar.onclick = function() {
+                tarjeta.remove();
+            };
+
+            tarjeta.appendChild(p);
+            tarjeta.appendChild(btnCompletar);
+            tarjeta.appendChild(btnEliminar);
+
+            document.getElementById('lista').appendChild(tarjeta);
+
+            document.getElementById('inputTarea').value = '';
+        }
+    </script>
+
+</body>
+</html>
