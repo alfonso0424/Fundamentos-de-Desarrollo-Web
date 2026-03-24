@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Kardex</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="barra">
+        <span class="nombre-sistema">Sistema Escolar</span>
+        <a >Mi kardex</a>
+        <a class="btn-salir">Cerrar sesión</a>
+    </nav>
+
+    <div class="caja">
+    <div class="formulario">
+
+            <h2>Mi Kardex</h2>
+            <p class="texto-descripcion">Aquí puedes ver todas tus calificaciones por período.</p>
+
+            <div class="datosalumno">
+                <div class="fila-doble">
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Nombre</span>
+                    </div>
+
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Número de control</span>
+                    </div>
+                </div>
+                <div class="fila-doble">
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Carrera</span>
+                    </div>
+
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Semestre</span>
+                    </div>
+                </div>
+                <div class="texto-promedio">Promedio general:</div>
+            </div>
+
+            <h3 class="titulo-periodo">Enero - Junio 2024</h3>
+            
+            <!-- esta tabla la hice para mostrar masomenos como se iba a ver, ya que
+            en realidad el kardex se muestra con la consulta a la bd entonces esta no va
+            a estar en el diseño final  -->
+            <table>
+                <tr>
+                    <th>Materia</th>
+                    <th>Calificación</th>
+                </tr>
+                <tr>
+                    <td>Fundamentos de Programación Web</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Matemáticas Discretas</td>
+                    <td>85</td>
+                </tr>
+            </table>
+
+            <h3 class="titulo-periodo">Agosto - Diciembre 2024</h3>
+            
+            <table>
+                <tr>
+                    <th>Materia</th>
+                    <th>Calificación</th>
+                </tr>
+                <tr>
+                    <td>Programación Orientada a Objetos</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Bases de Datos</td>
+                    <td>86</td>
+                </tr>
+            </table>
+
+    </div>
+    </div>
+
+</body>
+</html>

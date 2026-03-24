@@ -1,0 +1,197 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: black;
+    box-sizing: border-box;
+}
+
+.barra {
+    background-color: darkblue;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.barra .nombre-sistema {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.barra a {
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.barra a:hover {
+    background-color: black;
+    color: white;
+}
+
+.barra .btn-salir {
+    color: white;
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.barra .btn-salir:hover {
+    background-color: lightcoral;
+}
+
+.caja{
+    width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.formulario {
+    background-color: white;
+    border-radius: 8px;
+    padding-top: -20px;
+    padding-left:30px ;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    border-top: 8px solid darkblue;
+}
+
+.formulario h2 {
+    color: darkblue;
+    font-size: 22px;
+}
+
+.texto-descripcion {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.campo input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.fila-doble {
+    display: flex;
+    gap: 15px;
+}
+
+.fila-doble .campo {
+    flex: 1;
+}
+
+.btn-guardar {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-guardar:hover {
+    background-color: lightblue;
+}
+
+.btn-cancelar {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+table th {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid gray;
+}
+
+.datosalumno {
+    background-color: lightblue;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.dato-individual {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.etiqueta-dato {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.texto-promedio {
+    margin-top: 8px;
+    font-size: 15px;
+    color: darkblue;
+}
+
+.titulo-periodo {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: darkblue;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.titulopaso {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: darkblue;
+}
+

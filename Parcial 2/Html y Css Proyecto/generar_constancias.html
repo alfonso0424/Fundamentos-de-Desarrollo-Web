@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Constancias</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="barra">
+        <span class="nombre-sistema">Sistema Escolar</span>
+        <a>Inscribir alumnos</a>
+        <a>Constancias</a>
+        <a>Certificados</a>
+        <a class="btn-salir">Cerrar sesión</a>
+    </nav>
+
+    <div class="caja">
+    <div class="
+    formulario">
+
+            <h2>Generar Constancia</h2>
+            <p class="texto-descripcion">Genera una constancia de estudios en PDF para un alumno.</p>
+
+            <h3 class="titulopaso">1. Buscar alumno</h3>
+
+            <div class="fila-doble">
+                <div class="campo">
+                <label>Número de control o nombre</label>
+                <input type="text">
+                </div>
+
+                <div class="campo" style="display: flex; align-items: flex-end;">
+                <button class="btn-guardar" style="margin-top: 0;">Buscar</button>
+                </div>
+            </div>
+
+            <h3 class="titulopaso">2. Datos del alumno</h3>
+
+            <div class="datosalumno">
+                <div class="fila-doble">
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Nombre</span>
+                    </div>
+
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Número de control</span>
+                    </div>
+
+                </div>
+                <div class="fila-doble">
+
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Carrera</span>
+                    </div>
+
+                    <div class="dato-individual">
+                    <span class="etiqueta-dato">Semestre</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="titulopaso">3. Tipo de constancia</h3>
+
+            <div class="campo">
+                <label>Selecciona el tipo</label>
+                <select id="tipo-constancia"></select>
+            </div>
+
+            <button class="btn-guardar">Generar PDF</button>
+
+    </div>
+    </div>
+
+</body>
+</html>
