@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: darkblue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    color: darkblue;
+    margin-bottom: 6px;
+}
+
+.login-header p {
+    color: black;
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: darkblue;
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-login {
+    padding: 12px;
+    background: darkblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+.error-box {
+    background: white;
+    color: red;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid red;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px;
+    }
+}

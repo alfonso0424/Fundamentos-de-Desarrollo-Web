@@ -1,0 +1,349 @@
+body {
+    font-family: Arial;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+}
+
+.barra {
+    background-color: darkblue;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.barra .nombre-sistema {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.barra a {
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.barra a:hover {
+    background-color: gray;
+}
+
+.barra .btn-salir {
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.caja {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.formulario {
+    margin-top: -10px;
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px black;
+    border-top: 5px solid darkblue;
+}
+
+.formulario h2 {
+    color: darkblue;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.formulario h3 {
+    color: darkblue;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+}
+
+.texto-descripcion {
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/*CAMPOS DE FORMULARIO*/
+.campo {
+    margin-top: 18px;
+}
+
+.campo label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: darkblue;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+
+/*FILAS DOBLES*/
+.fila-doble {
+    display: flex;
+    gap: 15px;
+}
+
+/*BOTONES*/
+.btn-guardar {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-cancelar {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ============ TABLAS ============ */
+table {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: darkblue;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid white;
+}
+
+/*DATOS DEL ALUMNO */
+.datosalumno {
+    background-color: white;
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-left: 4px solid darkblue;
+}
+
+.dato-individual {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.etiqueta-dato {
+    font-size: 11px;
+    color: gray;
+    margin-bottom: 3px;
+    font-weight: 600;
+    text-transform: uppercase; /*mayuscula */
+}
+
+/* TÍTULOS*/
+.titulo-periodo {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: darkblue;
+    border-bottom: 2px solid blue;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.titulopaso {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #1a237e;
+    font-weight: 600;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*MENSAJES ERROR APRUEBA*/
+.info-mensaje {
+    background-color: white;
+    color: green;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.error-mensaje {
+    background-color: white;
+    color: red;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+/*TARJETAS (CARDS)*/
+.card {
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px black;
+    border-left: 4px solid blue;
+}
+
+.card-title {
+    color: darkblue;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    color: gray;
+    font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .caja {
+        margin: 15px auto;
+        padding: 8px;
+    }
+
+    .formulario {
+        padding: 18px;
+    }
+
+    .fila-doble {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .btn-guardar,
+    .btn-cancelar {
+        font-size: 12px;
+        padding: 9px 16px;
+        width: 100%;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .barra {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .barra .nombre-sistema {
+        font-size: 13px;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .barra a {
+        font-size: 10px;
+        padding: 4px 8px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .caja {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 5px;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .formulario h2 {
+        font-size: 18px;
+    }
+
+    .btn-guardar,
+    .btn-cancelar {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px 12px;
+        margin: 8px 0;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    table th,
+    table td {
+        padding: 6px 4px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .info-mensaje,
+    .error-mensaje {
+        padding: 10px 12px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
